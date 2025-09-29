@@ -1,0 +1,42 @@
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+  }
+
+  &__done {
+    width: 16px;
+    height: 16px;
+  }
+
+  &__work {
+    padding: 5px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 8px;
+  }
+
+  &__img {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}

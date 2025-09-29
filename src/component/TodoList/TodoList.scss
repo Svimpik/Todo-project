@@ -1,0 +1,31 @@
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__filters {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__items {
+    margin: 0;
+    padding: 0;
+  }
+}

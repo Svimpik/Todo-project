@@ -1,0 +1,29 @@
+.App {
+  font-family: "Inter", sans-serif;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas:
+    "header header"
+    "sidebar main";
+  height: 100vh;
+  margin: 50px;
+  border: 2px solid gray;
+  border-radius: 8px;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.button--active {
+  border-bottom: 2px solid gray;
+}

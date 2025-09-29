@@ -1,0 +1,40 @@
+.sidebar {
+  grid-area: sidebar;
+
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  border-right: 2px solid gray;
+
+  &__img {
+    width: 16px;
+    height: 16px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 15px 25px;
+    gap: 5px;
+    font-weight: 700;
+  }
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 15px 25px;
+  gap: 15px;
+
+  &__photo {
+    width: 32px;
+    height: 32px;
+  }
+}
