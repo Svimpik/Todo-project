@@ -11,6 +11,9 @@
   }
 
   &__checkbox {
+    width: 20px;
+    height: 20px;
+
     display: flex;
     align-items: center;
     border: 2px solid rgb(0, 0, 0);
@@ -38,5 +41,9 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+  }
+
+  &--completed {
+    text-decoration: line-through;
   }
 }

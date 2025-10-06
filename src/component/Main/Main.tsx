@@ -1,7 +1,15 @@
+import type { Todos } from "../../type";
 import TodoList from "../TodoList/TodoList";
 import "./Main.scss";
 
-const Main = () => {
+type Props = {
+  todos: Todos[];
+  onToogle: (id: number) => void;
+  onDelete: (id: number) => void;
+  isOpenForm: () => void;
+};
+
+const Main: React.FC<Props> = ({ todos, onToogle, onDelete, isOpenForm }) => {
   return (
     <main className="main">
       <div className="welcome">
@@ -12,10 +20,17 @@ const Main = () => {
         <p className="welcome__text">
           Створюй, редагуй і відмічай завдання у зручному списку
         </p>
-        <button className="welcome__button">Почати</button>
+        <button className="welcome__button" onClick={isOpenForm}>
+          Почати
+        </button>
       </div>
 
-      <TodoList />
+      <TodoList
+        todos={todos}
+        onToogle={onToogle}
+        onDelete={onDelete}
+        isOpenForm={isOpenForm}
+      />
     </main>
   );
 };
