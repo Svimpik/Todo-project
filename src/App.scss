@@ -1,4 +1,4 @@
-.App {
+.app {
   font-family: "Inter", sans-serif;
 
   display: grid;
@@ -26,4 +26,28 @@ button {
 
 .button--active {
   border-bottom: 2px solid gray;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1001;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    min-width: 320px;
+  }
 }
